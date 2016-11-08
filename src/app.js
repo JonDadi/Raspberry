@@ -16,12 +16,12 @@ app.get('/', (req, res) => {
   res.render('index', {});
 });
 
-app.get('/test', (req, res) => {
+/*app.get('/test', (req, res) => {
   gpio.open(16, "output", (err) => {		// Open pin 16 for output
     gpio.write(16, 1, function() {			// Set pin 16 high (1)
-        gpio.close(16);						// Close pin 16 
+        gpio.close(16);						// Close pin 16
   });
-});
+});*/
   res.render('index', {});
 });
 
